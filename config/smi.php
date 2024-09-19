@@ -253,6 +253,12 @@ return [
     'tags' => [
         [
             'slug'     => \Illuminate\Support\Str::slug('Украина'),
+            'name'     => 'Datenschutz',
+            'contains' => 'Datenschutz', 'DSGVO'
+        ],
+        /*
+        [
+            'slug'     => \Illuminate\Support\Str::slug('Украина'),
             'name'     => 'Украина',
             'contains' => 'Украи', 'Киев'
         ],
@@ -266,6 +272,7 @@ return [
             'name'     => 'США',
             'contains' => 'США', 'Байден', 'Техас', 'Белый дом',
         ],
+        */
         /*
         [
             'slug'     => \Illuminate\Support\Str::slug('Навальный'),
