@@ -61,7 +61,8 @@ jobs:
           APP_ENV: production
           APP_KEY: base64:hh+C71dWj0tmdKkazohGJh5vxSGNkvN1H9o6IDwEyaA=
           APP_DEBUG: false
-          APP_URL: https://infinews.github.io/tech
+          APP_URL: https://infinews.github.io/tech/
+          ASSET_URL: https://infinews.github.io/tech/
         run: |
           php artisan config:cache
           php artisan rss:download
