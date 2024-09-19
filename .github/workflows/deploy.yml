@@ -61,11 +61,21 @@ jobs:
         with:
           name: Logs
           path: storage/logs/
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v4
+#      - name: Deploy 🚀
+ #       uses: JamesIves/github-pages-deploy-action@releases/v4
+ #       with:
+ #         single-commit: true
+ #         clean: true
+ #         token: ${{ github.token }}
+ #         branch: master
+ #         folder: public
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          single-commit: true
-          clean: true
-          token: ${{ github.token }}
-          branch: master
-          folder: public
+          # Upload pub repository
+          path: 'public'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
