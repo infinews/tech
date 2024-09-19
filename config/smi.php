@@ -72,7 +72,7 @@ return [
     */
 
     'rss' => [
-    /*
+    
         "https://www.tagesschau.de/xml/rss2/",
         "https://www.mdr.de/nachrichten/mdr-homepage-146-rss.xml",
         "https://www.n-tv.de/rss",
@@ -128,7 +128,7 @@ return [
         "https://www.waz.de/rss",
         "https://www.merkur.de/deutschland/rssfeed.rdf",
         // https://newstral.com/de
-*/
+/*
 
         // smi
       
@@ -223,6 +223,7 @@ return [
 
 
         //'https://rss.unian.net/site/news_rus.rss?',
+*/
     ],
 
     /*
