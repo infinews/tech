@@ -252,7 +252,7 @@ return [
 
     'tags' => [
         [
-            'slug'     => \Illuminate\Support\Str::slug('Украина'),
+            'slug'     => \Illuminate\Support\Str::slug('DSGVO'),
             'name'     => 'Datenschutz',
             'contains' => 'Datenschutz', 'DSGVO'
         ],
