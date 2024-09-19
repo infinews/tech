@@ -45,11 +45,11 @@ jobs:
           timedatectl
       - name: Artisan 🔮
         env:
-          APP_NAME: Titanson
+          APP_NAME: TechNews
           APP_ENV: production
           APP_KEY: base64:hh+C71dWj0tmdKkazohGJh5vxSGNkvN1H9o6IDwEyaA=
           APP_DEBUG: false
-          APP_URL: https://titanson.github.io
+          APP_URL: https://infinews.github.io/tech
         run: |
           php artisan config:cache
           php artisan rss:download
@@ -66,6 +66,6 @@ jobs:
         with:
           single-commit: true
           clean: true
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ github.token }}
           branch: master
           folder: public

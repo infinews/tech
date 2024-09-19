@@ -18,9 +18,9 @@ return [
              */
             'url' => 'feeds.main',
 
-            'title' => 'My feed',
+            'title' => 'Tech Feed',
             'description' => 'The description of the feed.',
-            'language' => 'ru-RU',
+            'language' => 'en-US',
 
             /*
              * The view that will render the feed.
